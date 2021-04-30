@@ -1,4 +1,4 @@
-#!/bin/sh -l
+#!/bin/bash
 DURATION="${1-.}" # 1day == 86400
 CHANGED=false     # false by default
 echo "Checking if last commit on current branch was less than ${DURATION}seconds ago"
