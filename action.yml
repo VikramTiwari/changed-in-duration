@@ -1,0 +1,18 @@
+name: "Changed in duration"
+description: "Checks if there have been any changes on current branch in specific duration (in seconds)"
+branding:
+  color: "gray-dark"
+  icon: "align-center"
+inputs:
+  duration:
+    required: true
+    default: "86400"
+    description: "Duration to check against, default is 1 day"
+outputs:
+  changed:
+    description: "true if there are any changes, otherwise false"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.duration }}
