@@ -2,7 +2,7 @@ name: "Changed in duration"
 description: "Checks if there have been any changes on current branch in specific duration (in seconds)"
 branding:
   color: "gray-dark"
-  icon: "align-center"
+  icon: "clock"
 inputs:
   duration:
     required: true
